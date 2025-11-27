@@ -1,1 +1,7 @@
 /vendor/
+.phpunit.cache/
+coverage/
+.env
+.idea/
+.vscode/
+*.log
