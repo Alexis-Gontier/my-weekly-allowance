@@ -1,3 +1,6 @@
+# Ce projet sera fini avant minuit 27/11 (pas encore fini)
+
+
 # Test Unitaire TDD 
 
 ## Projet MyWeeklyAllowance
