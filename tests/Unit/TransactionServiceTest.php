@@ -28,8 +28,11 @@ class TransactionServiceTest extends TestCase
 
     protected function setUp(): void
     {
+        // Reset singleton for isolation
+        TransactionService::resetInstance();
+
         $this->childService = new ChildService();
-        $this->transactionService = new TransactionService();
+        $this->transactionService = TransactionService::getInstance();
         $this->depositService = new DepositService($this->childService);
         $this->expenseService = new ExpenseService($this->childService);
 
